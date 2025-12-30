@@ -1,6 +1,6 @@
 export default {
-  title: 'Baserow',
-  titleTemplate: '%s | Baserow',
+  title: 'NordikTable',
+  titleTemplate: '%s | NordikTable',
   meta: [
     { charset: 'utf-8' },
     {
@@ -14,6 +14,12 @@ export default {
     },
   ],
   link: [
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      href: '/img/icon.svg',
+      hid: true,
+    },
     {
       rel: 'icon',
       type: 'image/png',
