@@ -1,113 +1,124 @@
-$white: #fff;
-$black: #000;
+// NordikTable Dark Mode Palette
+// Inverting the neutrals and adjusting primaries for dark mode compatibility
 
-$palette-neutral-0: $white !default;
-$palette-neutral-25: #fafafa !default;
-$palette-neutral-50: #f7f7f7 !default;
-$palette-neutral-100: #f5f5f5 !default;
-$palette-neutral-200: #ededed !default;
-$palette-neutral-300: #e6e6e7 !default;
-$palette-neutral-400: #d7d8d9 !default;
-$palette-neutral-500: #cdcecd !default;
-$palette-neutral-600: #b5b5b7 !default;
-$palette-neutral-700: #9c9c9f !default;
-$palette-neutral-800: #838387 !default;
-$palette-neutral-900: #6a6b70 !default;
-$palette-neutral-1000: #515258 !default;
-$palette-neutral-1100: #393a40 !default;
-$palette-neutral-1200: #202128 !default;
-$palette-neutral-1300: #070810 !default;
+$white: #121212; // Dark background instead of white
+$black: #ffffff; // Light text instead of black
 
-$palette-blue-50: #f0f4fc !default;
-$palette-blue-100: #dae4fd !default;
-$palette-blue-200: #acc8f8 !default;
-$palette-blue-300: #96baf6 !default;
-$palette-blue-400: #689ef1 !default;
-$palette-blue-500: #5190ef !default;
-$palette-blue-600: #4783db !default;
-$palette-blue-700: #3c76c7 !default;
-$palette-blue-800: #275d9f !default;
-$palette-blue-900: #1d508b !default;
-$palette-blue-1000: #124377 !default;
-$palette-blue-1100: #083663 !default;
+// Neutrals: Inverted logic (Low numbers are now dark, high numbers are light)
+$palette-neutral-0: #121212 !default;  // Background
+$palette-neutral-25: #1e1e1e !default; // Surface
+$palette-neutral-50: #232323 !default;
+$palette-neutral-100: #2c2c2c !default;
+$palette-neutral-200: #383838 !default;
+$palette-neutral-300: #454545 !default;
+$palette-neutral-400: #575757 !default;
+$palette-neutral-500: #6f6f6f !default;
+$palette-neutral-600: #8b8b8b !default;
+$palette-neutral-700: #a5a5a5 !default; // Text secondary
+$palette-neutral-800: #c1c1c1 !default;
+$palette-neutral-900: #dbdbdb !default; // Text primary
+$palette-neutral-1000: #e8e8e8 !default;
+$palette-neutral-1100: #f2f2f2 !default;
+$palette-neutral-1200: #f9f9f9 !default;
+$palette-neutral-1300: #ffffff !default; // Pure white text
 
-$palette-green-50: #ecfcf1 !default;
-$palette-green-100: #d0f6dc !default;
-$palette-green-200: #a0eeba !default;
-$palette-green-300: #71e597 !default;
-$palette-green-400: #41dd75 !default;
-$palette-green-500: #12d452 !default;
+// Blues (Primary): Shifted to be lighter/brighter on dark background
+$palette-blue-50: #0d2a45 !default; // Darkest blue for background tints
+$palette-blue-100: #124377 !default;
+$palette-blue-200: #1d508b !default;
+$palette-blue-300: #275d9f !default;
+$palette-blue-400: #3c76c7 !default;
+$palette-blue-500: #4783db !default; // Primary brand color
+$palette-blue-600: #5190ef !default;
+$palette-blue-700: #689ef1 !default;
+$palette-blue-800: #96baf6 !default;
+$palette-blue-900: #acc8f8 !default;
+$palette-blue-1000: #dae4fd !default;
+$palette-blue-1100: #f0f4fc !default; // Lightest blue for highlights
+
+// Greens (Success)
+$palette-green-50: #052610 !default;
+$palette-green-100: #075521 !default;
+$palette-green-200: #096a29 !default;
+$palette-green-300: #0b7f31 !default;
+$palette-green-400: #0d9439 !default;
+$palette-green-500: #0eaa42 !default;
 $palette-green-600: #10bf4a !default;
-$palette-green-700: #0eaa42 !default;
-$palette-green-800: #0d9439 !default;
-$palette-green-900: #0b7f31 !default;
-$palette-green-1000: #096a29 !default;
-$palette-green-1100: #075521 !default;
+$palette-green-700: #12d452 !default;
+$palette-green-800: #41dd75 !default;
+$palette-green-900: #71e597 !default;
+$palette-green-1000: #a0eeba !default;
+$palette-green-1100: #d0f6dc !default;
 
-$palette-red-50: #fff2f0 !default;
-$palette-red-100: #ffdeda !default;
-$palette-red-200: #ffbdb4 !default;
-$palette-red-300: #ff9c8f !default;
-$palette-red-400: #ff7b69 !default;
-$palette-red-500: #ff5a44 !default;
+// Reds (Error)
+$palette-red-50: #33120d !default;
+$palette-red-100: #66241b !default;
+$palette-red-200: #802d22 !default;
+$palette-red-300: #993629 !default;
+$palette-red-400: #b23f30 !default;
+$palette-red-500: #cc4836 !default;
 $palette-red-600: #e5513d !default;
-$palette-red-700: #cc4836 !default;
-$palette-red-800: #b23f30 !default;
-$palette-red-900: #993629 !default;
-$palette-red-1000: #802d22 !default;
-$palette-red-1100: #66241b !default;
+$palette-red-700: #ff5a44 !default;
+$palette-red-800: #ff7b69 !default;
+$palette-red-900: #ff9c8f !default;
+$palette-red-1000: #ffbdb4 !default;
+$palette-red-1100: #ffdeda !default;
 
-$palette-cyan-50: #ecfbfd !default;
-$palette-cyan-100: #cff5fa !default;
-$palette-cyan-200: #a0ebf5 !default;
-$palette-cyan-300: #70e0ef !default;
-$palette-cyan-400: #41d6ea !default;
-$palette-cyan-500: #11cce5 !default;
+// Cyans
+$palette-cyan-50: #04292e !default;
+$palette-cyan-100: #07525c !default;
+$palette-cyan-200: #096673 !default;
+$palette-cyan-300: #0a7a89 !default;
+$palette-cyan-400: #0c8fa0 !default;
+$palette-cyan-500: #0ea3b7 !default;
 $palette-cyan-600: #0fb8ce !default;
-$palette-cyan-700: #0ea3b7 !default;
-$palette-cyan-800: #0c8fa0 !default;
-$palette-cyan-900: #0a7a89 !default;
-$palette-cyan-1000: #096673 !default;
-$palette-cyan-1100: #07525c !default;
+$palette-cyan-700: #11cce5 !default;
+$palette-cyan-800: #41d6ea !default;
+$palette-cyan-900: #70e0ef !default;
+$palette-cyan-1000: #a0ebf5 !default;
+$palette-cyan-1100: #cff5fa !default;
 
-$palette-yellow-50: #fffbf0 !default;
-$palette-yellow-100: #fff4da !default;
-$palette-yellow-200: #ffe9b4 !default;
-$palette-yellow-300: #ffdd8f !default;
-$palette-yellow-400: #ffd269 !default;
-$palette-yellow-500: #ffc744 !default;
+// Yellows (Warning)
+$palette-yellow-50: #33280d !default;
+$palette-yellow-100: #66501b !default;
+$palette-yellow-200: #806422 !default;
+$palette-yellow-300: #997729 !default;
+$palette-yellow-400: #b28b30 !default;
+$palette-yellow-500: #cc9f36 !default;
 $palette-yellow-600: #e5b33d !default;
-$palette-yellow-700: #cc9f36 !default;
-$palette-yellow-800: #b28b30 !default;
-$palette-yellow-900: #997729 !default;
-$palette-yellow-1000: #806422 !default;
-$palette-yellow-1100: #66501b !default;
+$palette-yellow-700: #ffc744 !default;
+$palette-yellow-800: #ffd269 !default;
+$palette-yellow-900: #ffdd8f !default;
+$palette-yellow-1000: #ffe9b4 !default;
+$palette-yellow-1100: #fff4da !default;
 
-$palette-magenta-50: #fdf3f9 !default;
-$palette-magenta-100: #f9e1ef !default;
-$palette-magenta-200: #f3c3df !default;
-$palette-magenta-300: #eea6d0 !default;
-$palette-magenta-400: #e888c0 !default;
-$palette-magenta-500: #e26ab0 !default;
+// Magentas
+$palette-magenta-50: #2d1523 !default;
+$palette-magenta-100: #5a2a46 !default;
+$palette-magenta-200: #713558 !default;
+$palette-magenta-300: #88406a !default;
+$palette-magenta-400: #9e4a7b !default;
+$palette-magenta-500: #b5558d !default;
 $palette-magenta-600: #cb5f9e !default;
-$palette-magenta-700: #b5558d !default;
-$palette-magenta-800: #9e4a7b !default;
-$palette-magenta-900: #88406a !default;
-$palette-magenta-1000: #713558 !default;
-$palette-magenta-1100: #5a2a46 !default;
+$palette-magenta-700: #e26ab0 !default;
+$palette-magenta-800: #e888c0 !default;
+$palette-magenta-900: #eea6d0 !default;
+$palette-magenta-1000: #f3c3df !default;
+$palette-magenta-1100: #f9e1ef !default;
 
-$palette-purple-50: #f9f1fd !default;
-$palette-purple-100: #efdcfb !default;
-$palette-purple-200: #dfb9f7 !default;
-$palette-purple-300: #cf96f2 !default;
-$palette-purple-400: #bf73ee !default;
-$palette-purple-500: #af50ea !default;
+// Purples
+$palette-purple-50: #23102f !default;
+$palette-purple-100: #46205e !default;
+$palette-purple-200: #582875 !default;
+$palette-purple-300: #69308c !default;
+$palette-purple-400: #7b38a4 !default;
+$palette-purple-500: #8c40bb !default;
 $palette-purple-600: #9d48d3 !default;
-$palette-purple-700: #8c40bb !default;
-$palette-purple-800: #7b38a4 !default;
-$palette-purple-900: #69308c !default;
-$palette-purple-1000: #582875 !default;
-$palette-purple-1100: #46205e !default;
+$palette-purple-700: #af50ea !default;
+$palette-purple-800: #bf73ee !default;
+$palette-purple-900: #cf96f2 !default;
+$palette-purple-1000: #dfb9f7 !default;
+$palette-purple-1100: #efdcfb !default;
 
 // Temporarily using the "old" color variable names. This is because we're still
 // figuring out which old color is going to be replaced by which new color. Having this
@@ -176,15 +187,15 @@ $color-purple-200: $palette-purple-200 !default;
 $color-purple-300: $palette-purple-300 !default;
 $color-purple-400: $palette-purple-400 !default;
 
-$color-pink-100: #f7e1f2 !default;
-$color-pink-200: #f7b2e7 !default;
-$color-pink-300: #f285d9 !default;
+$color-pink-100: #33152d !default; // inverted
+$color-pink-200: #713558 !default;
+$color-pink-300: #cb5f9e !default;
 $color-pink-400: #ff6dde !default;
 
-$color-brown-100: #f5e6dc !default;
-$color-brown-200: #f5ceb0 !default;
-$color-brown-300: #f5c098 !default;
-$color-brown-400: #f5a96e !default;
+$color-brown-100: #3d2618 !default; // inverted
+$color-brown-200: #b26b30 !default;
+$color-brown-300: #f5a96e !default;
+$color-brown-400: #f5c098 !default;
 
 $color-cyan-100: $palette-cyan-100 !default;
 $color-cyan-200: $palette-cyan-200 !default;

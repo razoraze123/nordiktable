@@ -149,21 +149,14 @@ export default function CoreModule(options) {
   ])
 
   const locales = [
-    { code: 'en', name: 'English', file: 'en.json' },
     { code: 'fr', name: 'Français', file: 'fr.json' },
-    { code: 'nl', name: 'Nederlands', file: 'nl.json' },
-    { code: 'de', name: 'Deutsch', file: 'de.json' },
-    { code: 'es', name: 'Español', file: 'es.json' },
-    { code: 'it', name: 'Italiano', file: 'it.json' },
-    { code: 'pl', name: 'Polski (Beta)', file: 'pl.json' },
-    { code: 'ko', name: '한국인', file: 'ko.json' },
   ]
 
   this.requireModule([
     '@nuxtjs/i18n',
     {
       strategy: 'no_prefix',
-      defaultLocale: 'en',
+      defaultLocale: 'fr',
       detectBrowserLanguage: {
         useCookie: true,
         cookieKey: 'i18n-language',
@@ -172,7 +165,7 @@ export default function CoreModule(options) {
       langDir: path.resolve(__dirname, '../../locales/'),
       lazy: true,
       vueI18n: {
-        fallbackLocale: 'en',
+        fallbackLocale: 'fr',
         silentFallbackWarn: true,
       },
     },
